@@ -16,7 +16,7 @@
 <body <?php body_class(); ?>>
 
 <nav>
-<a href="adamkozie.com"><img src="../images/ak-logo-icon.png" alt="AK logo"></a>
+<a href="adamkozie.com"><img src="<?php bloginfo ('url'); ?>images/ak-logo-icon.png" alt="AK logo"/></a>
 <ul>
 <li><a target="_blank" href="https://www.facebook.com/adam.kozie">Facebook</a></li>
 <li><a target="_blank" href="https://www.linkedin.com/in/adam-kozie-093191b4">LinkedIn</a></li>

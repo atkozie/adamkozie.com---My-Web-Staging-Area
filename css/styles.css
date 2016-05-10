@@ -93,15 +93,13 @@ margin-right:20%;
 margin-left:7%;
 margin-right:7%;
 margin-bottom:30px;
-	font-family:arial, helvetica, sans-serif;
-/*font-family:'latohairline';*/
+font-family:'latohairline';
 line-height:125%;
 font-size:120%;
 }
 
 .text ul {
-	font-family:arial, helvetica, sans-serif;
-	/*font-family:'latohairline';*/
+font-family:'latohairline';
 	margin-bottom:30px;
 	margin-left:10%;
 line-height:130%;
@@ -155,10 +153,18 @@ margin-top:20px;
 margin-bottom:20px;
 }
 
+li {
+font-family:'latohairline';
+}
+
 @font-face {
 	font-family: 'bebas_neuebook';
 	src: url('../fonts/bebasneue_book-webfont.eot');
-	src: url('../fonts/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'),  url('../fonts/bebasneue_book-webfont.woff2') format('woff2'),  url('../fonts/bebasneue_book-webfont.woff') format('woff'),  url('../fonts/bebasneue_book-webfont.ttf') format('truetype'),  url('../fonts/bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
+	src: url('../fonts/bebasneue_book-webfont.eot?#iefix') format('embedded-opentype'), 
+         url('../fonts/bebasneue_book-webfont.woff2') format('woff2'),  
+         url('../fonts/bebasneue_book-webfont.woff') format('woff'),  
+         url('../fonts/bebasneue_book-webfont.ttf') format('truetype'),  
+         url('../fonts/bebasneue_book-webfont.svg#bebas_neuebook') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
