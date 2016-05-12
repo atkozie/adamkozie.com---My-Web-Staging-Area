@@ -114,7 +114,7 @@ a img.aligncenter {
 
 /*---------------------------------nav-----*/
 
-nav {
+#nav {
 	max-width:1280px;
 	width:100%;
 	height:3em;
@@ -123,14 +123,15 @@ line-height:50px;
 color:black;
 }
 
-nav ul {
+#nav ul {
 text-align:center;
 width:60%;
 float:right;
 opacity:1;
+    list-style-type: none;
 }
 
-nav li {
+#nav li {
 width:20%;
 display:inline;
 font-family:'latohairline';
@@ -139,7 +140,7 @@ float:left;
 opacity:1;
 }
 
-nav img {
+#nav img {
 float:left;
 height:20px;
 padding-left:1.5%;

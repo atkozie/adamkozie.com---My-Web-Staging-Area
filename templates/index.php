@@ -15,22 +15,30 @@
 
 <body <?php body_class(); ?>>
 
-<nav>
-<a href="adamkozie.com"><img src="<?php bloginfo ('url'); ?>images/ak-logo-icon.png" alt="AK logo"/></a>
+   
+    <!--begin nav-->
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'nav', 'items_wrap' => '<ul id="nav-items" class="%2$s">%3$s</ul>', ) ); ?> 
+    
+<!--hard coded nav
+<div id="nav">
+<a href="adamkozie.com"><img src="<?php // bloginfo ('url'); ?>images/ak-logo-icon.png" alt="AK logo"/></a>
 <ul>
 <li><a target="_blank" href="https://www.facebook.com/adam.kozie">Facebook</a></li>
 <li><a target="_blank" href="https://www.linkedin.com/in/adam-kozie-093191b4">LinkedIn</a></li>
 <li><a target="_blank" href="http://akozieitc240.blogspot.com/">Blog</a></li>
 <li><a href="mailto:atkozie@gmail.com">Contact</a></li>
 </ul>
-</nav>
+</div>
+end hard coded nav-->
+    
+    <!--end nav-->
 
 <main>
-
-<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); // start the loop ?>
-<h2><a href="<?php the_permalink(); // link to the page or posting ?>"><?php the_title(); // get the page or posting title ?></a></h2>
-<?php the_content(''); // get page or posting written content ?>
-<?php endwhile; endif; // end the loop ?>
+<!--the body loop-->
+<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+<?php the_content(''); ?>
+<?php endwhile; endif; ?>
 </main>
 
 <footer>
