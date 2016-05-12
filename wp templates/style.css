@@ -148,13 +148,62 @@ padding-top:15px;
 opacity:1;	
 }
 
+/*---begin drop menu CSS---*/
+
 #nav ul li ul {
     display:none;
 }
 
-#nav ul li.current-menu-item a {
-    color:azure;
+#nav ul li:hover ul {  
+display:block;
 }
+
+#nav li ul {
+background-color:rgba(0, 0, 0, 0.7);
+z-index:999;
+}
+
+#nav li ul li {
+float:none;
+clear:both;
+margin:0;
+line-height:35px;
+}
+
+#nav li ul li a {
+border-bottom:.5px solid white;
+border-left:.5px solid white;
+border-right:.5px solid white;
+color:white;
+width:120px;
+}
+
+#nav li ul li a.first {
+border-top:.5px solid white;
+}
+
+#nav li ul li ul {
+margin-left:5px;
+}
+/*--end drop menu CSS----*/
+
+/*Sub category CSS*/
+#nav ul li.current-menu-item a {
+color:azure;
+}
+
+#nav li.page_item page-item-36 current_page_item {
+color:azure;
+}
+
+#nav h2.sub-nav-title {
+    
+}
+#nav ul.sub-nav-items {
+    
+}
+
+
 
 
 /*---------------------------------main-----*/
