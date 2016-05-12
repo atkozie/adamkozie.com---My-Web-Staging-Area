@@ -17,7 +17,7 @@
 
    
     <!--begin nav-->
-<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'nav', 'items_wrap' => '<ul id="nav-items" class="%2$s">%3$s</ul>', ) ); ?> 
+<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'nav',)); ?> 
     
 <!--hard coded nav
 <div id="nav">
@@ -49,8 +49,6 @@ end hard coded nav-->
 </ul>
 
 </footer>
-
-
 
 <?php wp_footer(); ?>
 </body>

@@ -148,6 +148,14 @@ padding-top:15px;
 opacity:1;	
 }
 
+#nav ul li ul {
+    display:none;
+}
+
+#nav ul li.current-menu-item a {
+    color:azure;
+}
+
 
 /*---------------------------------main-----*/
 
@@ -410,6 +418,10 @@ main {
 main {
 	/*background:teal;*/
 }
+    
+    #nav ul li ul.sub-menu {
+        display:block;
+    }
 
 .textimage {
 	margin-bottom:30px;
