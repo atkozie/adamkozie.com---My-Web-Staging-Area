@@ -14,8 +14,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-   
+    
     <!--begin nav-->
 <?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'container' => 'div','container_id' => 'nav',)); ?> 
     <!--end nav-->
