@@ -19,6 +19,12 @@ function register_my_menus() {
 }
 add_action( 'init', 'register_my_menus' );
 
+register_sidebar(array(
+'before_widget' => '<div id="%1$s" class="widget %2$s">',
+    'after_widget' => '</div>',
+    'before_title' => '<h2>',
+    'after_title' => '</h2>'
+));
 
 
 

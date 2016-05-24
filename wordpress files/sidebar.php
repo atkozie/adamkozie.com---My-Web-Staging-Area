@@ -16,3 +16,17 @@
     <?php endif; ?>
     </div>   <!--end text div--> 
     <!--end subnavigation--> 
+
+<div id="sub-navigation">
+<?php my_subnavigation(); ?>
+</div><!--end subnav-->
+
+<div id="my-quote">
+<?php if (get_post_meta($post->ID, 'quote', true)) {
+ //finish this...   
+}?>
+</div>
+
+<div id="dynamic-widgets">
+<?php dynamic_sidebar(); ?>
+</div><!--end dynamic sidebar-->
