@@ -15,7 +15,7 @@
 <h2>Template</h2>
 </div><!--end textimage-->
     
-    <section class="slider"><h2>Flex Slider is here</h2>
+    <section class="slider">
     <div class="flexslider">
           <ul class="slides">
             <li><img src="http://www.adamkozie.com/images/banner-afropop.jpg" alt="afropop"></li>

@@ -266,6 +266,31 @@ html[xmlns] .flexslider .slides {
 }
 /*------end flex slider css---*/
 
+/*------post thumbnail image---*/ 
+
+img.wp-post-image {
+    
+}
+
+img.attachment-thumbnail {
+    float:left;
+    margin:10px 20px 0 0;
+    
+}
+
+img.attachment-medium {
+    
+}
+
+img.attachment-large {
+    
+}
+
+img.attachment-full {
+    
+}
+/*------end post thumbnail---*/
+
 /*------------Wordpress core generated classes-----------*/
 
 .alignnone {
@@ -531,6 +556,12 @@ line-height:130%;
 list-style-type:none;
 }
 
+article.post-excerpt {
+    overflow:hidden;
+    width:100%;
+    margin-bottom:30px;
+}
+
 /*---------------------------------site banner divs-----*/
 
 .banner {
@@ -623,6 +654,7 @@ p {
 
 h2, h3, h4, h5, h6 {
     margin:0 15px 15px 15px;
+    clear:both;
 }
 
 ul, ol {
@@ -676,6 +708,10 @@ a:hover {
 }
 /* selected link */
 a:active {	
+}
+
+a.readmore {
+    color:darkslategrey;
 }
 
 /*--------------------------------Media Breaks-----*/
