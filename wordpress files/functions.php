@@ -35,4 +35,23 @@ add_theme_support( 'post-thumbnails' );
 add_post_type_support( 'page', 'excerpt' );
 
 
+//my dynamic title tag 
+function get_my_title_tag() {    
+    global $post; 
+    if ( is_front_page()){ //for front page...
+        bloginfo('description'); //get the tagline
+    }  elseif ( is_page() || is_single() ) {
+        the_title(); //get the page or post title
+    } else {
+        bloginfo('description'); //get the tagline
+    }
+    //then, in addition...
+    echo ' | ';
+    bloginfo('name');
+    echo ' | ';
+    echo 'Seattle, WA';
+}
+
+
+
 ?>

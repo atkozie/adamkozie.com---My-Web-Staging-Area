@@ -608,6 +608,11 @@ width:100%;
     float:right;
 }
 
+blockquote {
+    font-family: 'latohairline';
+    margin:30px;
+}
+
 /*---------------------------------footer-----*/
 
 footer {

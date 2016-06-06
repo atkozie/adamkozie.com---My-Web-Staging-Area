@@ -17,9 +17,16 @@
     </div>   <!--end text div--> 
     <!--end subnavigation--> 
 
+<!--old code here
 <div id="sub-navigation">
-<?php my_subnavigation(); ?>
-</div><!--end subnav-->
+<?php // my_subnavigation(); ?>
+</div>end old subnav-->
+
+<!--quote-->
+<?php if(get_post_meta($post -> ID, 'Quote', true)): //if there is a quote custo field item ?>
+<blockquote><?php echo get_post_meta($post->ID, 'Quote', true); //here's the quote entered in the dashboard ?></blockquote>
+<?php endif; ?>
+<!--end quote-->
 
 <div id="my-quote">
 <?php if (get_post_meta($post->ID, 'quote', true)) {
