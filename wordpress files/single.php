@@ -9,7 +9,6 @@
     <?php the_post_thumbnail( 'large' ); //show the blog post featured image?>
 <?php the_content(''); ?>
 <?php endwhile; endif; ?>
-    <p>***this is single.php</p>
         </article>
     <?php get_sidebar(); ?>
     

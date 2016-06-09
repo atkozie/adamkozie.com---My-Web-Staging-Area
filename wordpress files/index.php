@@ -12,7 +12,6 @@
         <?php the_excerpt(); //blog post excerpt ?><a class="readmore" href="<?php the_permalink(); //display the URL ?>">Read More</a>
         </article>
 <?php endwhile; endif; //end of body loop ?>
-    <p>***this is index.php</p>
     <?php get_sidebar(); ?>
     
     </main>
